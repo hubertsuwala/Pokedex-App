@@ -4,9 +4,15 @@ import './style.css';
 const PokemonList = ({ pokemons, numberOfPokemons, sortByName }) => {
   // take list of pokemon and sort when click on icon in component Filter
   // slice method to limit sorting pokemon, default value of numberOfPokemons is 20, when click button increase 10
-  const sortedByName = pokemons
-    .slice(0, numberOfPokemons)
-    .sort((a, b) => (sortByName ? a.id - b.id : b.id - a.id));
+  const sortedByName = pokemons.slice(0, numberOfPokemons).sort((a, b) => {
+    if (a.name > b.name && !sortByName) {
+      return -1;
+    }
+    if (a.name < b.name && sortByName) {
+      return -1;
+    }
+    return 0;
+  });
 
   return (
     <ul className="pokemon-list">
