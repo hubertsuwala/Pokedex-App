@@ -1,0 +1,39 @@
+{
+    "extends": [
+        "wesbos"
+    ],
+    "rules": {
+        "react/destructuring-assignment": [
+            0,
+            "always",
+            {
+                "ignoreClassFields": true
+            }
+        ],
+        "react/prop-types": [
+            0,
+            {
+                "ignore": 0,
+                "customValidators": 0,
+                " skipUndeclared": 0
+            }
+        ]
+        // ,
+        // "react/button-has-type": [
+        //     2,
+        //     {
+        //         "button": true,
+        //         "submit": true,
+        //         "reset": false
+        //     }
+        // ]
+    }
+    // ,
+    // "plugins": [
+    //     "react-button-has-type"
+    // ]
+    // ,
+    // "rules": {
+    //     "react-button-has-type/rule-name": 2
+    // }
+}
