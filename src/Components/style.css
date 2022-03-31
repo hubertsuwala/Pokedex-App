@@ -23,7 +23,7 @@ body {
 
 body.light {
     --background-color: #da9999;
-    --background-sec: rgb(197, 36, 36);
+    --background-sec: rgb(145, 99, 99);
     --color-font: rgb(26, 6, 6);
 }
 
@@ -109,6 +109,11 @@ body.light {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.error {
+    color: var(--color-font);
+    font-size: 2rem;
 }
 
 @keyframes fadeIn {
